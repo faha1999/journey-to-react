@@ -1,9 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './components/Navbar';
-import Main from './components/Main';
+import App from './App';
 
-ReactDOM.render(
-  <h1>Hello, I just create React App!</h1>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));

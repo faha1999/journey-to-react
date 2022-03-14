@@ -58,6 +58,14 @@ nav {
       order: 1;
       flex-grow: 0;
       margin: 0px 8px;
+
+      vertical-align: middle;
+
+      img {
+        width: 1rem;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+      }
     }
 
     .button-white {

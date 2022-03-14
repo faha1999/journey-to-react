@@ -1,6 +1,5 @@
 nav {
   align-items: center;
-  background-color: #21222a;
   text-align: center;
 
   .nav--icon {
@@ -40,7 +39,6 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    row-gap: 1rem;
 
     button {
       width: 115px;
@@ -65,7 +63,7 @@ nav {
     .button-white {
       border: 1px solid #d1d5db;
       background: #ffffff;
-      margin-right: 1rem;
+      margin-right: 0.2rem;
       color: #374151;
     }
 

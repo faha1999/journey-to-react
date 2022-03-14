@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 4rem;
+  background: #161619;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+
+  img {
+    width: 2rem;
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-right: 1rem;
+    }
+  }
+}

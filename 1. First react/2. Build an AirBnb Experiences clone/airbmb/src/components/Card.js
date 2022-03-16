@@ -2,20 +2,20 @@ import React from 'react';
 import product1 from '../images/katie-zaferes.png';
 import star from '../images/star.png';
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card">
-      <img src={product1} />
+      <img src={props.img} />
 
       <div className="card-star">
         <img src={star} />
-        <span>5.0</span>
-        <span className="gray">(6) . </span>
-        <span className="gray">USA</span>
+        <span>{props.rating}</span>
+        <span className="gray">({props.reviewCount}) . </span>
+        <span className="gray">{props.country}</span>
       </div>
       <p>Life lessons with Katie Zaferes</p>
       <p>
-        <strong>From $136 / </strong>person
+        <strong>From ${props.price} / </strong>person
       </p>
     </div>
   );

@@ -1,1 +1,1 @@
-body{background:red}/*# sourceMappingURL=style.min.css.map */
+*{margin:0;padding:0;box-sizing:border-box}.container{max-width:700px;margin:0 auto;background:red}.navbar{text-align:center;justify-content:center;display:flex;background:#f55a5a;color:#fff;padding:1rem 0}.navbar img{margin-right:1rem;width:24px;height:24px}.navbar h3{font-size:14px;font-style:normal;font-weight:500;line-height:18px;letter-spacing:-0.075em;justify-content:center}/*# sourceMappingURL=style.min.css.map */

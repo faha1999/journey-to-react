@@ -1,15 +1,16 @@
 import React from 'react';
-import css from './css/style.min.css';
+import './css/style.min.css';
 
 function App() {
-  const [things, setThings] = React.useState(['Thing 1', 'Thing 2']);
+  const [thingsArray, setThingsArray] = React.useState(['Thing 1', 'Thing 2']);
 
   function addItem() {
-    const newThingText = `Thing ${things.length + 1}`;
-    setThings((prevState) => [...prevState, newThingText]);
+    setThingsArray((prevState) => {
+      return [...prevState, `Thing ${prevState.length + 1}`];
+    });
   }
 
-  const thingsElements = things.map((thing) => <p key={thing}>{thing}</p>);
+  const thingsElements = thingsArray.map((thing) => <p key={thing}>{thing}</p>);
 
   return (
     <div>

@@ -1,14 +1,14 @@
 import React from 'react';
 import './css/style.min.css';
-import Joke from './Joke';
-import jokesData from './jokesData';
+// import Joke from './Joke';
+// import jokesData from './jokesData';
 
-export default function App() {
-  const jokeElements = jokesData.map((joke) => {
-    return <Joke key={joke.id} setup={joke.setup} punchline={joke.punchline} />;
-  });
-  return <div>{jokeElements}</div>;
-}
+// export default function App() {
+//   const jokeElements = jokesData.map((joke) => {
+//     return <Joke key={joke.id} setup={joke.setup} punchline={joke.punchline} />;
+//   });
+//   return <div>{jokeElements}</div>;
+// }
 
 // // && practice
 // export default function App() {
@@ -39,3 +39,22 @@ export default function App() {
 //     </div>
 //   );
 // }
+
+// // && practice challenge
+
+export default function App() {
+  const [messages, setMessages] = React.useState(['a', 'b']);
+
+  return (
+    <div>
+      {messages.length === 0 ? (
+        <h1>You're all caught up!</h1>
+      ) : (
+        <h1>
+          You have {messages.length} unread{' '}
+          {messages.length > 1 ? 'messages' : 'message'}
+        </h1>
+      )}
+    </div>
+  );
+}

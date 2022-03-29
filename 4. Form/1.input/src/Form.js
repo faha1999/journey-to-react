@@ -4,7 +4,8 @@ import './css/style.min.css';
 export default function Form() {
   const [formData, setFormData] = React.useState({
     firstName: '',
-    lastName: ''
+    lastName: '',
+    email: ''
   });
 
   console.log(formData);
@@ -31,6 +32,12 @@ export default function Form() {
         placeholder="Last Name"
         onChange={handleChange}
         name="lastName"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        onChange={handleChange}
+        name="email"
       />
     </form>
   );

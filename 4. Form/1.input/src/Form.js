@@ -5,8 +5,11 @@ export default function Form() {
   const [formData, setFormData] = React.useState({
     firstName: '',
     lastName: '',
-    email: ''
+    email: '',
+    comments: ''
   });
+
+  console.log(formData.comments);
 
   function handleChange(event) {
     setFormData((prevFormData) => {
@@ -39,6 +42,12 @@ export default function Form() {
         onChange={handleChange}
         name="email"
         value={formData.email}
+      />
+      <textarea
+        value={formData.comments}
+        placeholder="Comments"
+        onChange={handleChange}
+        name="comments"
       />
     </form>
   );

@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: rgba(19, 1, 37, 0.473);
+  background-color: #639;
   height: 100vh;
   font-family: 'Inter', sans-serif;
 }
@@ -18,7 +18,7 @@ body {
   align-items: center;
 
   .form {
-    background-color: rgb(1, 101, 167);
+    background-color: white;
     padding: 50px;
     border-radius: 10px;
     display: flex;
@@ -35,7 +35,6 @@ body {
     border: 1px solid gray;
     padding: 5px;
     font-family: 'Inter', sans-serif;
-    background-color: rgb(19, 1, 37);
   }
 
   .form--submit {

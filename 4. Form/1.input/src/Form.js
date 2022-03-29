@@ -8,8 +8,6 @@ export default function Form() {
     email: ''
   });
 
-  console.log(formData);
-
   function handleChange(event) {
     setFormData((prevFormData) => {
       return {
@@ -26,18 +24,21 @@ export default function Form() {
         placeholder="First Name"
         onChange={handleChange}
         name="firstName"
+        value={formData.firstName}
       />
       <input
         type="text"
         placeholder="Last Name"
         onChange={handleChange}
         name="lastName"
+        value={formData.lastName}
       />
       <input
         type="email"
         placeholder="Email"
         onChange={handleChange}
         name="email"
+        value={formData.email}
       />
     </form>
   );

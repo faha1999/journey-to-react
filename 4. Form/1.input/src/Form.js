@@ -11,10 +11,8 @@ export default function Form() {
     employment: '',
     favColor: ''
   });
-  console.log(formData.favColor);
 
   function handleChange(event) {
-    console.log(event);
     const { name, value, type, checked } = event.target;
     setFormData((prevFormData) => {
       return {
@@ -24,8 +22,14 @@ export default function Form() {
     });
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    // submitToApi(formData)
+    console.log(formData);
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="First Name"
@@ -118,6 +122,9 @@ export default function Form() {
         <option value="indigo">Indigo</option>
         <option value="violet">Violet</option>
       </select>
+      <br />
+      <br />
+      <button>Submit</button>
     </form>
   );
 }

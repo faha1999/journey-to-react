@@ -18,5 +18,16 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: auto !important;
+}
+
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
 }

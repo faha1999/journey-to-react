@@ -38,3 +38,38 @@
   text-align: center;
   color: #293264;
 }
+
+form {
+  margin: 20px;
+
+  > label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #293264;
+    margin-bottom: 1rem;
+  }
+
+  > select {
+    border-radius: 10px;
+    border: 0.75px solid #293264;
+    margin-top: 0.6em;
+    margin-bottom: 1.3rem;
+    padding: 10px;
+    background-color: #deebf8;
+    width: 220px;
+    outline: none;
+  }
+}
+
+.btnStart {
+  width: 193px;
+  height: 52px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}

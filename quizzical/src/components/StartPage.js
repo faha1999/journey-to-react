@@ -46,7 +46,7 @@ export default function StartPage({
           value={inputData.numberOfQuestions}
           onChange={handleOnChange}
         >
-          <option value="">--Select Number of Questions--</option>
+          <option value="">Select Number of Questions</option>
           <option value="5">5</option>
           <option value="10">10</option>
           <option value="15">15</option>
@@ -62,7 +62,7 @@ export default function StartPage({
           value={inputData.category}
           onChange={handleOnChange}
         >
-          <option value="">--Select Category--</option>
+          <option value="">Select Category</option>
           {categories.map((cat) => {
             return (
               <option key={cat.id} value={cat.id}>

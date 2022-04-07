@@ -43,24 +43,6 @@
   width: 300px;
 }
 
-form {
-  margin: 20px;
-}
-
-form > label {
-  color: #293264;
-  font-size: 1.5em;
-}
-
-form > select {
-  border-radius: 10px;
-  border: 2px solid #4d5b9e;
-  font-size: 1em;
-  margin-bottom: 2em;
-  min-width: 340px;
-  padding: 10px;
-}
-
 .questionsSection {
   z-index: 1;
 }
@@ -87,12 +69,6 @@ form > select {
   color: white;
   cursor: pointer;
   justify-content: center;
-}
-
-.btnStart {
-  font-size: 1.5em;
-  height: 50px;
-  width: 200px;
 }
 
 .answersList {

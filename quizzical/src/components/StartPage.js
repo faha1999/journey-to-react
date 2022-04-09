@@ -7,14 +7,14 @@ export default function StartPage({
   setCategories,
   setInputData,
   showModal,
-  setShowModal
+  setShowModal,
 }) {
   function handleOnChange(e) {
     const { name, value } = e.target;
     setInputData((prevData) => {
       return {
         ...prevData,
-        [name]: value
+        [name]: value,
       };
     });
   }
@@ -29,10 +29,15 @@ export default function StartPage({
     <main>
       {showModal && (
         <div className="modal">
-          <p>Select All Options</p>
-          <button onClick={() => setShowModal(false)} className="button close">
-            x
-          </button>
+          <div className="content">
+            <p>Select All Options</p>
+            <button
+              onClick={() => setShowModal(false)}
+              className="button close"
+            >
+              x
+            </button>
+          </div>
         </div>
       )}
 
